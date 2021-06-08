@@ -28,7 +28,7 @@ class App extends React.Component {
   }
 
   componentDidMount = () => {
-    this.worker = new Worker('webWorker.jsx')
+    this.worker = new Worker('webWorker.js')
     
     this.worker.onmessage = e => {
       this.addMessage(e)
